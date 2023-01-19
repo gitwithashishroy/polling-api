@@ -64,7 +64,7 @@ module.exports.addOptions = async function (req, res) {
         question : req.params.id,
         text: req.body.text,
         votes: 0,
-        link: `http://localhost:8005/option/${uniqueId}/add_vote`,
+        link: `http://13.127.39.112:8005/option/${uniqueId}/add_vote`,
       });
 
       await ques.options.push(option);
